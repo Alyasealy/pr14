@@ -1,0 +1,71 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;
+}
+.tabs-section {
+    padding: 40px 20px;
+  }
+  
+  .tabs-container {
+    max-width: 600px;
+    max-height: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+
+border: 5px solid pink;
+  }
+  
+  h1{
+    padding: 10px 10px;
+    height: 30px;
+  }
+  .tabs {
+    display: flex;
+    background-color: #ffaebf;
+  }
+  
+  .tab-btn {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #ffffff;
+border-radius: 50px;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .tab-btn.active,
+  .tab-btn:hover {
+    background-color: #e94c63;
+    color: #ffffff;
+  }
+  
+  .tab-content {
+    backdrop-filter: blur(6px);
+    border-radius: 50px;
+    padding: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.342);
+  }
+  
+  .tab-pane {
+    display: none;
+  }
+  
+  .tab-pane.active {
+    display: block;
+  }
+  
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
